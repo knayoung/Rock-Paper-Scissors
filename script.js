@@ -15,16 +15,22 @@ console.log(randomSelection)
 
 }
 
+ 
+function playRound(playerSelection, computerSelection) {
+
+     let lowerC = playerSelection.toLowerCase();
+
+     if (lowerC === "rock" && computerSelection === "paper")
+     {
+      return "You Lose! Paper beats Rock";
+     }
+   console.log(playRound(playerSelection, computerSelection));
+}
 
 
 
-function casing (playerSelection) {
 
-    
-    let lowerC = playerSelection.toLowerCase();
 
-    console.log(lowerC)
-    }
     
 
 
