@@ -6,7 +6,7 @@
 
 function computerPlay() {
 
-const cpuSelection =  ['rock', 'paper', 'scissors'];
+const cpuSelection =  ["rock", "paper", "scissors"];
 
 var randomSelection = cpuSelection[Math.floor(Math.random() * cpuSelection.length)];
 
@@ -15,6 +15,11 @@ console.log(randomSelection)
 
 }
 
+// rock paper
+// rock scissors
+// paper scissors
+// paper rock
+// scissors rock
  
 function playRound(playerSelection, computerSelection) {
 
@@ -24,8 +29,40 @@ function playRound(playerSelection, computerSelection) {
      {
       return "You Lose! Paper beats Rock";
      }
-   console.log(playRound(playerSelection, computerSelection));
-}
+
+     else if (lowerC === "paper" && computerSelection === "rock")
+     {
+      return "You Win! Paper beats Rock";
+     }
+
+     else if (lowerC === "paper" && computerSelection === "scissors")
+     {
+      return "You Lose! Scissors beats Paper";
+     }
+
+     else if (lowerC === "scissors" && computerSelection === "paper")
+     {
+      return "You Win! Scissors beats Paper";
+     }
+
+     else if (lowerC === "scissors" && computerSelection === "rock")
+     {
+      return "You Lose! Rock beats Scissors";
+     }
+
+     else if (lowerC === "rock" && computerSelection === "scissors")
+     {
+      return "You Win! Rock beats Scissors";
+     }
+     else {
+         return "Tie! Please try again";
+     }
+
+    
+   console.log(playRound(playerSelection, computerSelection))
+
+    }
+
 
 
 
